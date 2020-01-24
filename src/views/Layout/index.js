@@ -2,7 +2,6 @@ import React, {PureComponent, Fragment} from 'react';
 import { Switch } from 'react-router-dom';
 
 import Header from './Header';
-import Footer from './Footer';
 
 class View extends PureComponent {
     componentDidUpdate(prevProps) {
@@ -21,8 +20,6 @@ class View extends PureComponent {
                         {this.props.children}
                     </Switch>
                 </section>
-
-                <Footer/>
             </Fragment>
         );
     }

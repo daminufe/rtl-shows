@@ -26,7 +26,7 @@ class View extends PureComponent {
         }
 
         return (
-            <main>
+            <main className="welcome">
                 <h1>Welcome to the Powerpuff shows website.</h1>
                 <p>Showing all the results for Powerpuff Girls shows.</p>
 

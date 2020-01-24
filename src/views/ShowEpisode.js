@@ -31,12 +31,18 @@ class View extends PureComponent {
         }
 
         return isLoaded && (
-            <main>
+            <main className="show-episode-container">
                 <h1>{details.name}</h1>
-                <p><Link to={routes.SHOW_DETAIL.replace(':id', id)}><span role="img" aria-label="back">⏪</span> Back to show details</Link></p>
-                <div className="show-information">
-                    <img src={details.image.medium} alt=""/>
-                    <p className="show-summary" dangerouslySetInnerHTML={{ __html: details.summary }} />
+                <p className="back"><Link to={routes.SHOW_DETAIL.replace(':id', id)}><span role="img" aria-label="back">⏪</span> Back to show details</Link></p>
+
+                <div className="row">
+                    <div className="col media-img">
+                        <img src={details.image.medium} alt=""/>
+                    </div>
+                    <div className="col media-summary">
+                        <h4>Episode summary:</h4>
+                        <p dangerouslySetInnerHTML={{ __html: details.summary }} />
+                    </div>
                 </div>
 
                 {error && (

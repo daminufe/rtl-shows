@@ -1,5 +1,8 @@
 @import './variables';
 
+html, body {
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,9 +10,57 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: $black;
+  color: $white;
+}
+
+.main-container {
+  padding: 0 2rem;
+  max-width: 980px;
+  margin: auto;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+  width: 100%;
+}
+
+main.show-episode-container {
+  p.back {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  div.row {
+    display: flex;
+
+    .col {
+      flex: 1;
+
+      &.media-img {
+        width: 230px;
+        flex: 0 0 230px;
+      }
+
+      &.media-summary {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

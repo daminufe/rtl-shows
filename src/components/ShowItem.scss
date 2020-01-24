@@ -1,0 +1,24 @@
+@import '../variables';
+
+$img-width: 10rem;
+
+.show-item {
+  .media-img {
+    width: $img-width !important;
+    flex: 0 0 $img-width !important;
+  }
+
+  .media-summary {
+    a {
+      font-weight: bold;
+    }
+
+    span.badge {
+      background: $white;
+      color: $black;
+      margin-right: 1rem;
+      padding: 0.3rem 1rem;
+      border-radius: 1rem;
+    }
+  }
+}

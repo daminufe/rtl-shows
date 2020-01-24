@@ -44,18 +44,23 @@ class View extends PureComponent {
         }
 
         return showIsLoaded && (
-            <main>
+            <main className="show-details-container">
                 <h1>{details.name}</h1>
-                <div className="show-information">
-                    <img src={details.image.medium} alt=""/>
-                    <p className="show-summary" dangerouslySetInnerHTML={{ __html: details.summary }} />
+                <div className="row">
+                    <div className="col media-img">
+                        <img src={details.image.medium} alt=""/>
+                    </div>
+                    <div className="col media-summary">
+                        <h4>Show details:</h4>
+                        <p dangerouslySetInnerHTML={{ __html: details.summary }} />
+                    </div>
                 </div>
 
                 {episodesIsFetching && <p>Loading episodes...</p>}
                 {episodesError && <p>Something went wrong while fetching episodes</p>}
                 {episodesIsLoaded && (
                     <div>
-                        <p>{episodes.length} episodes</p>
+                        <p>{episodes.length} episodes available:</p>
                         <ul>
                             {episodes.map(({id, name, summary, season, number}) => (
                                 <li key={id}>
