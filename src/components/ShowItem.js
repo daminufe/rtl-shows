@@ -19,7 +19,7 @@ export default ({show}) => {
                     <span className="badge" key={genre}>{genre}</span>
                 ))}
             </div>
-            Rating: {rating.average}
+            Rating: {rating.average || 'N/A'}
         </div>
     );
 }
