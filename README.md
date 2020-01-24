@@ -11,7 +11,7 @@ As I had a limited time to develop this project the following must be taken in a
 * **Loading screens:** I quickly replace the entire view with a loading string, but in an ideal world the interface would have a better UX;
 * **dangerouslySetInnerHTML:** In a real world scenario, I would strip the tags or do the pre-processing in the backend side;
 * **Season grouping:** For the grouping per season, we could build child views to be able to select the season, and see all the episodes of a certain season.
-*
+* **Tests:** Due to lack of time, I haven't write any unit tests. If I would have written tests I would do them for the reducers and the mock of the API endpoints to certify the store was changed and the redux actions would be called.
 
 ## Available Scripts
 
