@@ -1,4 +1,17 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# RTL Shows
+
+This project is part of the assessment.
+
+## Considerations
+
+As I had a limited time to develop this project the following must be taken in account:
+
+* **fetch API**: I haven't used any polyfills for graceful degradation of the fetch API;
+* **Search:** I am only querying the shows with "Powerpuff" in the title. A searchbox with auto-suggestions could be implemented;
+* **Loading screens:** I quickly replace the entire view with a loading string, but in an ideal world the interface would have a better UX;
+* **dangerouslySetInnerHTML:** In a real world scenario, I would strip the tags or do the pre-processing in the backend side;
+* **Season grouping:** For the grouping per season, we could build child views to be able to select the season, and see all the episodes of a certain season.
+*
 
 ## Available Scripts
 
