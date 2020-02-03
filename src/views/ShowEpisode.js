@@ -37,7 +37,7 @@ class View extends PureComponent {
 
                 <div className="row">
                     <div className="col media-img">
-                        <img src={details.image.medium} alt=""/>
+                        <img src={details.image ? details.image.medium : 'url-to-default-image'} alt=""/>
                     </div>
                     <div className="col media-summary">
                         <h4>Episode summary:</h4>
